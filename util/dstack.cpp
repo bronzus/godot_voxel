@@ -12,6 +12,7 @@ struct Stack {
 	unsigned int count = 0;
 };
 
+
 Stack &get_tls_stack() {
 	thread_local Stack tls_stack;
 	return tls_stack;
